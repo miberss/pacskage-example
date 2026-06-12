@@ -1,0 +1,14 @@
+# manifest for the revo package manager - all fields are optional
+# name overrides the folder name derived from the install url
+name: example
+version: 1.0.0
+description: example package showing the manifest format
+
+# plugins this package needs, bare name or name >= minimum version
+requires: skript >= 2.15, skript-reflect >= 2.6
+
+# other packages this package needs: a git url is installed automatically,
+# a bare name is only checked for presence
+# packages: https://github.com/someone/other-package
+
+# origin: is written by the installer, no need to set it yourself

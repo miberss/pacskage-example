@@ -1,0 +1,6 @@
+local function greeting(name: String) -> String:
+    return "hello, %{_name}%!"
+
+command /greet [<who: text>]:
+    trigger:
+        send greeting({_who} ? "world")
